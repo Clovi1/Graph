@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "list_window.h"
 #include "function.h"
+#include "adj_matrix.h"
 
 #include <QMessageBox>
 
@@ -114,5 +115,13 @@ void MainWindow::on_pushButton_clicked()
     List_Window adj_list;
     adj_list.setModal(true);
     adj_list.exec();
+}
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    MatrixWindow adj_matrix;
+    adj_matrix.setModal(true);
+    adj_matrix.exec();
 }
 
