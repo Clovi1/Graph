@@ -13,6 +13,7 @@
 #include "QIterator"
 #include <cstring>
 #include "QVector"
+#include "adj_matrix.h"
 
 namespace Ui {
 class List_Window;
@@ -24,6 +25,7 @@ class List_Window : public QDialog
 
 public:
     explicit List_Window(QWidget *parent = nullptr);
+    int getVertex();
     ~List_Window();
 
 private slots:

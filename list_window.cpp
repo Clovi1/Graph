@@ -87,3 +87,7 @@ void List_Window::str_to_int(QString string,QVector<List> adj_list,QString &str,
     }
 }
 
+int List_Window::getVertex(){
+    return vertex;
+}
+

@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <function.h>
 #include <mainwindow.h>
+#include <list_window.h>
 
 namespace Ui {
 class adj_matrix;
@@ -19,6 +20,8 @@ public:
 
 private:
     Ui::adj_matrix *ui;
-};
+private slots:
+    void ShowMatrix();
 
+};
 #endif // ADJ_MATRIX_H

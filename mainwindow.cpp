@@ -120,7 +120,7 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    MatrixWindow adj_matrix;
+    adj_matrix adj_matrix;
     adj_matrix.setModal(true);
     adj_matrix.exec();
 }
