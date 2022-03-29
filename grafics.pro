@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     adj_matrix.cpp \
+    constants.cpp \
     function.cpp \
     list_window.cpp \
     main.cpp \
@@ -17,6 +18,7 @@ SOURCES += \
 
 HEADERS += \
     adj_matrix.h \
+    constants.h \
     function.h \
     list_window.h \
     mainwindow.h

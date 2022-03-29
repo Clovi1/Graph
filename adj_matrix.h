@@ -5,6 +5,7 @@
 #include <function.h>
 #include <mainwindow.h>
 #include <list_window.h>
+//#include "constants.cpp"
 
 namespace Ui {
 class adj_matrix;

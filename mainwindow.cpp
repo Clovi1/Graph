@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
 }
 
 MainWindow::~MainWindow()
@@ -123,5 +124,11 @@ void MainWindow::on_pushButton_2_clicked()
     adj_matrix adj_matrix;
     adj_matrix.setModal(true);
     adj_matrix.exec();
+}
+
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    ui->statusbar->showMessage(QString::number(vertex));
 }
 

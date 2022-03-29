@@ -14,6 +14,8 @@
 #include <cstring>
 #include "QVector"
 #include "adj_matrix.h"
+#include "constants.h"
+
 
 namespace Ui {
 class List_Window;
@@ -38,10 +40,10 @@ private slots:
 
 private:
     Ui::List_Window *ui;
-    int vertex = 0;
+//    int vertex = 0;
     QFormLayout *form_layout = new QFormLayout;
     QList<QPair<QLabel*,QLineEdit*>> list2;
-    QVector<List> adj_list;
+//    QVector<List> adj_list;
 };
 
 void str_to_int(QString string,vector<List> adj_list,int i);

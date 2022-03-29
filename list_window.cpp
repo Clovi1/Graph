@@ -7,7 +7,8 @@ List_Window::List_Window(QWidget *parent) :
     ui(new Ui::List_Window)
 {
     ui->setupUi(this);
-
+//    vertex = 0;
+//    Constant::vertex = 0;
 
     //    vector<List> adj_list(vertex);// Создание списка смежности
     //        get_list(adj_list, vertex);// Ввод графа в список смежности
@@ -35,7 +36,6 @@ void List_Window::on_add_vert_clicked()
     list2.append(qMakePair(temp,line));
     ui->scrollContents->setLayout(form_layout);
 
-
 }
 
 
@@ -57,7 +57,7 @@ void List_Window::on_finish_clicked()
     QList<QPair<QLabel*,QLineEdit*>> ::iterator it = list2.begin();
     adj_list.resize(vertex);
     QString str;
-    for (int i = 0;i < vertex; i++) {
+    for (int i = 0;i <vertex; i++) {
         QString string = it->second->text();
         it++;
         str.append(QString::number(i + 1) + ":   ");
@@ -87,7 +87,7 @@ void List_Window::str_to_int(QString string,QVector<List> adj_list,QString &str,
     }
 }
 
-int List_Window::getVertex(){
-    return vertex;
-}
+//int List_Window::getVertex(){
+//    return vertex;
+//}
 
