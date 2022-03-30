@@ -27,7 +27,7 @@ class List_Window : public QDialog
 
 public:
     explicit List_Window(QWidget *parent = nullptr);
-    int getVertex();
+//    int getVertex();
     ~List_Window();
 
 private slots:
