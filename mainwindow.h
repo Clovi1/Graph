@@ -5,6 +5,11 @@
 #include <QPainter>
 #include <adj_matrix.h>
 #include "constants.h"
+#include "QPainter"
+#include "QObject"
+#include "QWidget"
+#include "QPoint"
+#include "QFont"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,13 +26,16 @@ public:
 private:
     Ui::MainWindow *ui;
     int temp;
+    int drawCircle = 0;
 
 
 protected:
-    void paintEvent(QPaintEvent*) override;
 private slots:
     void on_pushButton_clicked();
     void on_pushButton_2_clicked();
     void on_pushButton_3_clicked();
+    void DrawVertex();
+    void paintEvent(QPaintEvent*) override;
+//    void on_pushButton_4_clicked();
 };
 #endif // MAINWINDOW_H
